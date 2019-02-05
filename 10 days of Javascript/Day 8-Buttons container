@@ -1,0 +1,57 @@
+*/html file
+<div id ="btns">
+    <div id = "btns" class = "btn1"> 1 </button>
+    <div id = "btns" class = "btn2"> 2 </button>
+    <div id = "btns" class = "btn3"> 3 </button>
+    <div id = "btns" class = "btn4"> 4 </button>
+    <div id = "btns" class = "btn5"> 5 </button>
+    <div id = "btns" class = "btn6"> 6 </button>
+    <div id = "btns" class = "btn7"> 7 </button>
+    <div id = "btns" class = "btn8"> 8 </button>
+    <div id = "btns" class = "btn9"> 9 </button>
+</div>
+
+*/js file 
+let btn1 = document.getElementById("btn1");
+let btn2 = document.getElementById("btn2");
+let btn3 = document.getElementById("btn3");
+let btn4 = document.getElementById("btn4");
+let btn5 = document.getElementById("btn5");
+let btn6 = document.getElementById("btn6");
+let btn7 = document.getElementById("btn7");
+let btn8 = document.getElementById("btn8");
+let btn9 = document.getElementById("btn9");
+
+function clockwiseRotation() {
+    [btn1.innerHTML,
+     btn2.innerHTML,
+     btn3.innerHTML,
+     btn4.innerHTML,
+     btn6.innerHTML,
+     btn7.innerHTML,
+     btn8.innerHTML,
+     btn9.innerHTML] =
+        [btn4.innerHTML,
+         btn1.innerHTML,
+         btn2.innerHTML,
+         btn7.innerHTML,
+         btn3.innerHTML,
+         btn8.innerHTML,
+         btn9.innerHTML,
+         btn6.innerHTML]
+}
+
+btn5.addEventListener("click", clockwiseRotation)
+
+*/css file
+#btns {
+    width: 75%;
+}
+
+.btn {
+    width: 30%;
+    height: 48px;
+    font-size: 24px;
+}
+
+
