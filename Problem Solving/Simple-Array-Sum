@@ -1,0 +1,5 @@
+function simpleArraySum(ar) {
+    return ar.reduce(function(a,b) {return a + b})
+
+}
+//this can be solved doing it this way or using a for loop
